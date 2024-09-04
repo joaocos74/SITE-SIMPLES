@@ -1,2 +1,2 @@
 # SITE-SIMPLES
-Site para uma empresa de consultoria.
+Um site para uma empresa de consultoria.
