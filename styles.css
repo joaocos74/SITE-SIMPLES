@@ -1,0 +1,173 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      
+      body {
+          font-family: , sans-serif;
+      }
+      
+      header {
+          background-color: #333;
+          padding: 10px;
+      }
+      
+      nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+      }
+      
+      nav ul li {
+          margin: 0 15px;
+      }
+      
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+      }
+      
+      .destaque {
+          background-color: #f39c12;
+          padding: 5px 10px;
+          border-radius: 5px;
+      }
+      
+      .imagem {
+          background-color: #ddd;
+          height: 300px;
+          position: relative;
+      }
+      
+      .contato-btn {
+          padding: 15px 20px 15px 20px;
+          font-size: 15px;
+          background-color: #00093f;
+          color: white;
+          border: none;
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          letter-spacing: -0.4px;
+          transform: translate(-50%, -50%);
+      }
+      
+      .contato-btn:hover {
+          background-color: #0993ac;
+      }
+      
+      .quadro-imagem {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 40px;
+      }
+      
+      .opcao-quadro {
+          position: relative;
+          width: 30%;
+      }
+      
+      .opcao-quadro img {
+          width: 100%;
+          height: auto;
+      }
+      
+      .opcao-btn {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 10px 20px;
+          background-color: #28a745;
+          color: white;
+          text-decoration: none;
+      }
+      
+      .opcao-btn:hover {
+          background-color: #218838;
+      }
+      
+      .botao-flutuante {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #25D366;
+          padding: 10px;
+          border-radius: 50%;
+          text-align: center;
+      }
+      
+      .botao-flutuante a {
+          color: white;
+          font-size: 18px;
+          text-decoration: none;
+      }
+      
+      .botao-flutuante a:hover {
+          color: #ddd;
+      }
+      .banner img {
+          width: 100%;
+          height: auto;
+      }
+      
+      .texto {
+          margin: 20px;
+          text-align: center;
+      }
+      
+      .contato {
+          text-align: center;
+          margin: 20px 0;
+      }
+#contato            
+.contato {
+          max-width: 600px;
+          margin: 50px auto;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          background-color: #f9f9f9;
+      }
+      
+      .contato h1 {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      
+      .contato label {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 10px;
+      }
+      
+      .contato input[type="text"],
+      .contato input[type="email"],
+      .contato input[type="tel"],
+      .contato select,
+      .contato textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      
+      .contato button[type="submit"] {
+          width: 100%;
+          padding: 15px;
+          font-size: 16px;
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      
+      .contato button[type="submit"]:hover {
+          background-color: #0056b3;
+      }
