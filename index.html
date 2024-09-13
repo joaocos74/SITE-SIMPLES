@@ -1,65 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Site</title>
+    <title>Meu Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho com tópicos -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#home2">Home 2</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li<a href="#contato">Contato</a></li>
-                <li class="destaque"><a href="#sobre">Sobre Nós</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Minha Empresa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Imagem e botão de contato -->
-    <section id="imagem-contato">
-        <div class="imagem">
-            <button class="contato-btn">Botão para Entrar em Contato</button>
-            <button class="contato-btn" onclick="window.open('contato.html', '_blank')">Botão para Entrar em Contato</button>
-
+    <section class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao Nosso Website</h2>
+            <p>Oferecemos as melhores soluções para o seu negócio.</p>
+            <a href="#" class="btn">Saiba Mais</a>
         </div>
     </section>
 
-    <!-- Quadro de Imagem com botões -->
-    <section id="home2" class="quadro-imagem">
-        <div class="opcao-quadro">
-            <img src="imagem1.jpg" alt="Imagem 1">
-            <a href="pagina1.html" class="opcao-btn">Opção 1SAIBA MAIS</a>
-        </div>
-        <div class="opcao-quadro">
-            <img src="imagem2.jpg" alt="Imagem 2">
-            <a href="pagina2.html" class="opcao-btn">Opção 2SAIBA MAIS</a>
-        </div>
-        <div class="opcao-quadro">
-            <img src="imagem3.jpg" alt="Imagem 3">
-            <a href="pagina3.html" class="opcao-btn">Opção 3SAIBA MAIS</a>
+    <section class="services">
+        <div class="container">
+            <h3>Nossos Serviços</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h4>Serviço 1</h4>
+                    <p>Descrição breve do serviço 1.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Serviço 2</h4>
+                    <p>Descrição breve do serviço 2.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Serviço 3</h4>
+                    <p>Descrição breve do serviço 3.</p>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- Botão flutuante para WhatsApp -->
-    <div class="botao-flutuante">
-        <a href="https://wa.me/5538999020954" target="_blank">WhatsApp</a>
+    
+ <!-- Nova Seção: Empresas que acreditam no nosso trabalho -->
+ <section class="clients">
+    <div class="container">
+        <h3>Algumas empresas que acreditam no nosso trabalho</h3>
+        <div class="client-slider">
+            <img src="logo1.png" alt="Logo Cliente 1">
+            <img src="logo2.png" alt="Logo Cliente 2">
+            <img src="logo3.png" alt="Logo Cliente 3">
+            <img src="logo4.png" alt="Logo Cliente 4">
+        </div>
     </div>
+</section>
+    <!-- Nova Seção: O que fazemos -->
+    <section class="what-we-do">
+        <div class="container">
+            <h3>O que fazemos</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h4>Consultoria</h4>
+                    <p>Oferecemos consultoria especializada em diversas áreas.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Desenvolvimento</h4>
+                    <p>Desenvolvemos soluções personalizadas para cada cliente.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Suporte Técnico</h4>
+                    <p>Nosso suporte técnico garante a tranquilidade de nossos clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+                                    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script simples para o slider das logos
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.client-slider img');
+        const totalImages = images.length;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.style.display = (i === index) ? 'inline-block' : 'none';
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            showImage(currentIndex);
+        }
+
+        setInterval(nextImage, 2000); // Troca a imagem a cada 2 segundos
+        showImage(currentIndex); // Exibe a primeira imagem inicialmente
+    </script>
 </body>
 </html>
-<!-- botão entrar em contato -->
-<button class="contato-btn" onclick="window.open('contato.html', '_blank')">Botão para Entrar em Contato</button>
-<!-- Primeiro Botão -->
-<button class="contato-btn" onclick="window.open('contato.html', '_blank')">Botão para Entrar em Contato</button>
-
-<!-- Segundo Botão -->
-<button class="contato-btn" onclick="window.open('contato.html', '_blank')">Botão para Entrar em Contato</button>
-
-<!-- Terceiro Botão -->
-<button class="contato-btn" onclick="window.open('contato.html', '_blank')">Botão para Entrar em Contato</button>
