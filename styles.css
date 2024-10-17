@@ -15,10 +15,66 @@ body {
     margin: 0 auto;
     max-width: 1200px;
 }
+/* Estilos para o banner */
+.banner {
+    background-image: url('cabeçario1.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Cobre toda a largura da tela */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Ocupa 100% da altura da janela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(223, 210, 186);
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona uma camada escura sobre a imagem para contraste */
+    z-index: 1;
+}
+
+.banner .container {
+    z-index: 2;
+    position: relative;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.banner .btn {
+    padding: 10px 20px;
+    background-color: #00aaff; /* Cor do botão */
+    color: rgb(230, 212, 154);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #007acc; /* Cor do botão ao passar o mouse */
+}
+
+
+/* Cabeçario */
 
 header {
-    background-color: #726f6f;
-    color: #fff;
+    background-color: #fcf8f8;
+    color: #000000;
     padding: 4rem 0;
 }
 
@@ -74,7 +130,7 @@ nav ul li a {
 
 .services {
     padding: 50px 0;
-    background-color: #fff;
+    background-color: #fffefe;
 }
 
 .services h3 {
@@ -88,7 +144,7 @@ nav ul li a {
 }
 
 .service-item {
-    background-color: #f9f9f9;
+    background-color: #666060;
     padding: 20px;
     width: 30%;
     text-align: center;
@@ -98,7 +154,7 @@ nav ul li a {
 /* Nova seção: O que fazemos */
 .what-we-do {
     padding: 100px 0;
-    background-color: rgb(223, 223, 228);
+    background-color: rgb(204, 194, 148);
 }
 
 .what-we-do h3 {
@@ -132,7 +188,7 @@ nav ul li a {
 
 footer {
     background-color: #292828;
-    color: #fff;
+    color: #dce4b0;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
